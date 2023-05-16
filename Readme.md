@@ -1,7 +1,13 @@
 # **Movies Website (Backend)**
 
-This is the Backend API for my movies' website.
+## Overview
 
-This API allows for the retrieval of movie data from 'movie-api-db' which is my MongoDB database
+The API provides endpoints to retrieve movie data from the 'movie-api-db', a MongoDB database. Additionally, it allows for submitting movie reviews through a POST request to localhost:8080/api/v1/reviews. The submitted review is then stored in the 'movie-api-db' database.
 
-This API also allows for a POST request that will POST a movie review sent to 'localhost:8080/api/v1/reviews'. The review is then stored in 'movie-api-db' database. 
+## API Endpoints
+
+The following API endpoints are available:
+
+* GET /api/v1/movies: Retrieves a list of movies from the 'movie-api-db' database.
+* GET /api/v1/movies/{imdbId}: Retrieves a single movie from the 'movie-api-db' by the imdbId.
+* POST /api/v1/reviews: Submits a movie review to be stored in the 'movie-api-db' database.
