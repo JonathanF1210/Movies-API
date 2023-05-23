@@ -9,6 +9,7 @@ import java.util.Map;
 import java.util.Optional;
 
 @RestController
+@CrossOrigin(origins = "http://localhost:8080")
 @RequestMapping("/api/v1/reviews")
 public class ReviewController {
     @Autowired
